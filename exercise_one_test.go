@@ -9,7 +9,7 @@ import (
 func TestFindMissingDrone_basic(t *testing.T) {
  result := FindMissingDrone([]int{1, 3, 2, 2, 3})
 
- if result != 100 {
+ if result != 1 {
   t.Errorf("expected missing drone ID to be 1, got %d", result)
  }
 }
